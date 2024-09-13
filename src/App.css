@@ -1,0 +1,416 @@
+
+/* this is the styling for header which contains <Header/> and <Nav/> */
+.main-header{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #f8f8f8;
+}
+
+.logo{
+    height :65px;
+    width :200px;
+    /* object-fit: cover; */
+}
+
+.navbar ul{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar ul li {
+    display: inline;
+}
+
+.nav-btn {
+    text-decoration: none;
+    background-color: #007BFF; /* Button background color */
+    color: white; /* Button text color */
+    padding: 10px 20px; /* Button padding */
+    border-radius: 5px; /* Rounded corners */
+    font-weight: bold;
+    border: none; /* No border */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.nav-btn:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+.navbar ul li a {
+    display: inline;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color: #333;
+    font-weight:bold;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.navbar ul li a:hover{
+    /* color:#007BFF; */
+    color: white;
+    padding: 11px 21px;
+}
+
+.main-header{
+    gap: 20px;
+}
+
+/* this is where i am going to style the main component */
+
+/* the styling of the first section */
+
+.main-content{
+    padding: 20px;
+}
+
+.first-section{
+    display: flex; /* Flexbox for side-by-side layout */
+    justify-content: space-around;/* Spread out the content and image */
+    align-items: center; /* Vertically center the content */
+    background-color: darkgreen; /* Dark green background */
+    color: #f8f8f8; /* White text color for contrast */
+    padding: 40px; /* Space inside the section */
+    border-radius: 8px; /* Slightly round the corners of the section */
+    margin-bottom: 20px;  /* Space below the section */
+}
+
+.text-content{
+    max-width: 60%; /* Ensure the text section doesn't take up too much space */
+}
+
+h1 {
+    font-size: 2.5rem; /* Large heading size */
+    margin-bottom: 10px;
+}
+
+h2{
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    font-weight: 300;
+}
+
+p{
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+
+.reservation-btn{
+    background-color: #FFD700; /* Gold button */
+    color: black; /*Black text */
+    border:none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* to add shadow and the button to pop out */
+}
+
+.reservation-btn:hover{
+    background-color: #e6c200;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 11px 21px;
+}
+
+.image-content img{
+    height: 250px;/* Set image height */
+    width: 240px; /*maintain aspect ratio */
+    border-radius: 10px; /* Round the edges of the image */
+}
+
+
+/* Second section with white background */
+
+.second-section{
+    background-color: #f8f8f8;
+    padding: 40px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.section-header h2{
+    font-size: 2rem;
+    color:#333;
+}
+
+.menu-btn{
+    background-color: #FFD700;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2)
+}
+
+.menu-btn:hover{
+    background-color: #e6c200;
+    padding: 11px 21px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2)
+}
+
+.card-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);/* 3 cards in a row */
+    gap: 20px;/* Space between cards */
+}
+
+.card{
+    background-color:#f8f8f8 ;
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a shadow to the card */
+}
+
+.card img{
+    width: 100%; /* Image takes up the top third of the card */
+    height: 150px;
+    object-fit: cover; /* Ensures the image covers the area nicely */
+    margin-bottom: 15px;
+}
+
+.card h3{
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between; /*Aligns the dish name and price */
+    align-items: center;
+
+}
+
+.card span{
+    font-size:1.2rem;
+    color:#333;
+}
+
+.card p{
+    font-size:1rem;
+    margin-bottom: 15px;
+}
+.card:hover {
+    background-color: #d8d7d7;
+    padding: 21px;
+}
+.delivery-link{
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    color: #007BFF;
+    font-weight:bold;
+    font-size: 1rem;
+}
+
+.delivery-link img{
+    height: 20px;
+    width: 30px;
+    margin-top: 5px;
+    margin-left: 10px;
+}
+
+.delivery-link:hover{
+    color: #0056b3;
+}
+
+/* Third section with dark green background */
+
+.third-section{
+    background-color: darkgreen;
+    color: #f8f8f8;
+    padding: 40px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    position:relative;
+}
+
+.third-section h2{
+    font-size:2rem;
+    margin-bottom: 20px;
+}
+
+.scroll-buttons{
+    position:absolute;
+    top: 50%;
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+}
+
+.scroll-btn{
+    background-color: #007BFF;
+    color:white;
+    border:none;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 1.5rem;
+    transition: background-color 0.3s ease;
+}
+
+.scroll-btn:hover{
+    background-color: #0056b3;
+}
+
+.testimonial-cards{
+    display: flex;
+    overflow-x:auto;
+    scroll-behavior: smooth;
+    padding-bottom: 10px; /* Space for scrollbar if  it appears */
+}
+
+/* Hide scrollbar for Webkit browsers (Chrome, Safari) */
+.testimonial-cards::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for Firefox */
+.testimonial-cards {
+    scrollbar-width: none; /* Firefox specific */
+}
+
+.testimonial-card{
+    background-color: #f8f8f8;
+    color: #333;
+    border-radius: 8px;
+    overflow:hidden;
+    flex: 0 0 auto;
+    width: 250px;
+    margin-right: 20px; /*Space between cards */
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial-card:hover{
+    background-color: #d8d7d7;
+    padding: 16px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+
+}
+
+.rating{
+    font-size: 1.2rem;
+    margin-bottom:10px;
+}
+
+.reviewer-info{
+    display:flex;
+    align-items:center;
+}
+
+.reviewer-img{
+    height:50px;
+    width:50px;
+    border-radius:50%;
+    margin-right:15px;
+}
+
+.reviewer-details{
+    flex: 1;
+}
+
+.review-link{
+    display: inline-block;
+    color: #007BFF;
+    font-weight:bold;
+    font-size: 1rem;
+    text-decoration:none;
+}
+
+.review-link:hover{
+    color:#0056b3
+}
+
+
+/* Fourth section with white background */
+
+.fourth-section {
+    background-color: white;
+    padding: 40px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.text-content {
+    max-width: 50%; /* Ensure the text doesn’t take up too much space */
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+
+h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    font-weight: 300;
+}
+
+p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+.image-toggle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 50%;
+    position: relative;
+    
+}
+
+.toggle-image {
+    width: 450px;
+    height: 300px;
+    max-height: 300px; /* Control the height to maintain aspect ratio */
+    object-fit: cover; /* Ensures the image covers the area nicely */
+    transition: opacity 0.5s ease-in-out;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.toggle-image:hover{
+    width: 451px;
+    height: 301px;
+}
+
+.toggle-btn {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.toggle-btn:hover {
+    background-color: #0056b3;
+    padding: 11px 21px;
+}
