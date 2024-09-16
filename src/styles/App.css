@@ -1,20 +1,20 @@
 
 /* this is the styling for header which contains <Header/> and <Nav/> */
-.main-header{
+/* .main-header{
     display: flex;
     justify-content:center;
     align-items: center;
     padding: 10px 20px;
     background-color: #f8f8f8;
-}
+} */
 
-.logo{
+/* .logo{
     height :65px;
     width :200px;
-    /* object-fit: cover; */
-}
+    //object-fit: cover;
+} */
 
-.navbar ul{
+/* .navbar ul{
     list-style: none;
     display: flex;
     gap: 20px;
@@ -28,18 +28,18 @@
 
 .nav-btn {
     text-decoration: none;
-    background-color: #007BFF; /* Button background color */
-    color: white; /* Button text color */
-    padding: 10px 20px; /* Button padding */
-    border-radius: 5px; /* Rounded corners */
+    background-color: #007BFF; // Button_background_color
+    color: white; //Button_text_color
+    padding: 10px 20px; //Button_padding
+    border-radius: 5px; //Rounded_corners
     font-weight: bold;
-    border: none; /* No border */
-    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
-}
+    border: none; //No_border
+    transition: background-color 0.3s ease; //Smooth_transition_for_hover_effect
+} */
 
-.nav-btn:hover {
-    background-color: #0056b3; /* Darker blue on hover */
-    cursor: pointer; /* Pointer cursor on hover */
+/* .nav-btn:hover {
+    background-color: #0056b3; //Darker blue on hover
+    cursor: pointer; //Pointer_cursor_on_hover
 }
 
 .navbar ul li a {
@@ -54,14 +54,14 @@
 }
 
 .navbar ul li a:hover{
-    /* color:#007BFF; */
+    //color:#007BFF;
     color: white;
     padding: 11px 21px;
 }
 
 .main-header{
     gap: 20px;
-}
+} */
 
 /* this is where i am going to style the main component */
 
@@ -413,6 +413,7 @@ p {
 .toggle-btn:hover {
     background-color: #0056b3;
     padding: 11px 21px;
+    font-size: 1.2rem
 }
 
 
