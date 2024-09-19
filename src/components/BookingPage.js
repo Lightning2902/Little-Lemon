@@ -160,7 +160,7 @@ const BookingPage = () => {
 
     const submitForm = (formData) => {
         if (submitAPI(formData)) {
-            navigate('/booking-confirmed'); // Navigate to confirmation page
+            navigate('/confirmed'); // Navigate to confirmation page
         }
     };
 

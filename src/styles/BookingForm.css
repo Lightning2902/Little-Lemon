@@ -1,0 +1,145 @@
+/* Centering the form */
+form {
+    display: grid;
+    max-width: 300px;
+    margin: 100px auto; /* Center the form vertically and horizontally */
+    padding: 20px;
+    gap: 20px;
+    background-color: #f3f3f3; /* Light background for the form */
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+  }
+  
+  /* Styling for input fields and select boxes */
+  input[type="date"],
+  input[type="number"],
+  select {
+    padding: 10px;
+    border: 2px solid #004400; /* Dark green border */
+    border-radius: 5px;
+    background-color: #e8f4e5; /* Light green background */
+    color: #333;
+    font-size: 16px;
+    transition: all 0.3s ease-in-out; /* Adding a transition effect */
+  }
+  
+  /* Adding hover and focus effects */
+  input[type="date"]:hover,
+  input[type="number"]:hover,
+  select:hover {
+    background-color: #d2e8c8; /* Slightly lighter green on hover */
+    border-color: #005500;
+  }
+  
+  input[type="date"]:focus,
+  input[type="number"]:focus,
+  select:focus {
+    outline: none;
+    background-color: #c9e7b7; /* Even lighter green on focus */
+    box-shadow: 0px 0px 5px #006600; /* Glow effect on focus */
+  }
+  
+
+
+
+
+  /* Styling the submit button with a class */
+.submit-button {
+    padding: 15px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out; 
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); 
+  }
+  
+  /* Button hover and focus effects */
+  .submit-button:hover {
+    background-color: #218838; 
+    transform: scale(1.05); 
+  }
+  
+  .submit-button:focus {
+    outline: none;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.3); 
+    transform: scale(1.05);
+  }
+
+
+
+
+  /* Disabled state for submit button */
+/* .submit-btn:disabled {
+    background-color: #d64a12; 
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: bold;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); 
+    cursor: not-allowed; 
+    color: #fff; 
+    opacity: 0.7; 
+  }
+   */
+  /* Enabled state for submit button */
+  /* .submit-button {
+    padding: 15px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out; 
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); 
+  } */
+  
+  /* .submit-button:hover {
+    background-color: #218838; 
+    transform: scale(1.05); 
+  } */
+  
+
+
+
+
+
+
+
+
+
+
+  
+  /* Disabled state for submit button */
+/* .submit-btn:disabled {
+    background-color: lightgray; 
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); 
+    cursor: not-allowed; 
+    color: #fff; 
+    opacity: 0.7; 
+  } */
+  
+  /* Enabled state for submit button */
+  /* .submit-btn {
+    background-color: #28a745; 
+    color: white; 
+    font-size: 1.2em; 
+    padding: 12px 20px; 
+    border: none;
+    cursor: pointer;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.4); 
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .submit-btn:hover {
+    background-color: #218838; 
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5); 
+  }
+   */
