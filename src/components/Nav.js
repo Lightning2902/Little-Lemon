@@ -26,7 +26,7 @@ function Nav() {
           </Link>
         </li>
         <li>
-          <Link to="/reservation">
+          <Link to="/booking-page">
             Reservation
           </Link>
         </li>

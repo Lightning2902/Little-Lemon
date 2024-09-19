@@ -1,9 +1,12 @@
+// try 1
+
 import React, { useState } from "react";
 import dishImage from "../images/restauranfood.jpg";
 import deliveryIcon from "../images/Dish icon.jpg";
 import reviewerImage from "../images/Mario and Adrian A.jpg";
 import image1 from "../images/lemon dessert.jpg";
 import image2 from "../images/greek salad.jpg";
+import { Link } from "react-router-dom"; // Import Link for navigation
 
 function Main() {
   const [showImage1, setShowImage1] = useState(true);
@@ -41,7 +44,10 @@ function Main() {
             Lemon offers a memorable dining experience that will leave you
             craving more.
           </p>
-          <button className="reservation-btn">Make a Reservation</button>
+          {/* <button className="reservation-btn">Make a Reservation</button> */}
+          <Link to="/booking-page" className="reservation-link">
+            Make a Reservation
+          </Link>
         </div>
         <div className="image-content">
           <img src={dishImage} alt="Delicious Dish" />
@@ -262,12 +268,13 @@ function Main() {
         </div>
 
         <div className="image-toggle">
-          <img src={showImage1 ? image1 : image2}
-          alt="Dish"
-          className="toggle-image"
+          <img
+            src={showImage1 ? image1 : image2}
+            alt="Dish"
+            className="toggle-image"
           />
           <button className="toggle-btn" onClick={toggleImage}>
-            {showImage1 ? 'Show Image 2' : 'Show Image 1'}
+            {showImage1 ? "Show Image 2" : "Show Image 1"}
           </button>
         </div>
       </section>
@@ -276,3 +283,4 @@ function Main() {
 }
 
 export default Main;
+

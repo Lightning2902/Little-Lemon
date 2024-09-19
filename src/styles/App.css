@@ -103,24 +103,46 @@ p{
 }
 
 
-.reservation-btn{
-    background-color: #FFD700; /* Gold button */
-    color: black; /*Black text */
+/* .reservation-btn{
+    background-color: #FFD700; //Gold_button
+    color: black; //Black_text
     border:none;
     padding: 10px 20px;
     font-size: 1rem;
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* to add shadow and the button to pop out */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); //to_add_shadow_and_the_button_to_pop_out
 }
 
 .reservation-btn:hover{
     background-color: #e6c200;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     padding: 11px 21px;
-}
+} */
 
+.reservation-link {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #f0a500;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease;
+    border: 2px solid transparent;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  
+  .reservation-link:hover {
+    background-color: #d48806;
+    border: 2px solid #d48806;
+    color: white;
+    padding: 11px 21px;
+    font-size: 1.3rem;
+  }
+
+  
 .image-content img{
     height: 250px;/* Set image height */
     width: 240px; /*maintain aspect ratio */
