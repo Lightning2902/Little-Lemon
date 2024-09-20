@@ -1,15 +1,12 @@
 import { render, screen } from "@testing-library/react";
-import BookingForm from './BookingForm';
+import BookingForm from './components/BookingForm';
 
-test('Renders the BookingForm heading', () => {
-    render(<BookingForm availableTimes={[]} formData={{}} handleFormChange={() => {}} handleDateChange={() => {}} />);
-    const headingElement = screen.getByText("Make Your Reservation");
-    expect(headingElement).toBeInTheDocument();
+test('renders correct attributes for number of guests input', () => {
+  render(<BookingForm />);
+  
+  const guestsInput = screen.getByLabelText(/Number of guests/i);
+
+  expect(guestsInput).toHaveAttribute('min', '1');
+  expect(guestsInput).toHaveAttribute('max', '10');
+  expect(guestsInput).toHaveAttribute('type', 'number');
 });
-
-
-
-
-// Explanation:
-// The test renders the BookingForm component with minimal required props like availableTimes, formData, and handlers.
-// It checks if the heading "Make Your Reservation" is present in the document.
